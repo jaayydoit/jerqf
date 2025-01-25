@@ -1,0 +1,120 @@
+ /*.main{
+ background-image: url('../bgi/green.jpg');
+ background-repeat:no-repeat;
+ background-size:cover;
+ height:97vh;
+ background-position:center;
+ background-attachment:fixed;
+ }*/
+ 
+ .color {
+ text-align:left;
+ color:white;
+ }
+ 
+ h4 {
+ text-align: right;
+ }
+ 
+ dd {
+ text-align:left;
+ margin:0;
+ }
+ 
+ .second {
+ position: relative; /* This will allow absolute positioning of the ::before pseudo-element */
+ height: 100vh; /* Example height */
+ }
+ 
+ .second::before {
+ content: ''; /* Make sure content is set */
+ background-image: url('../pics/bn.jpg');
+ background-repeat: repeat; /* Make the background image repeat */
+ background-size:cover; /* Let the image retain its original size */
+ position:fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: -1; /* Ensure it stays behind content */
+ opacity:.5;
+ }
+ 
+ 
+ 
+ .third {
+ position: relative;
+ height: 100vh;
+ }
+ 
+ .third::before {
+ content: ''; /* Make sure content is set */
+ background-image: url('../pics/bl.jpeg');
+ background-repeat: repeat; /* Make the background image repeat */
+ background-size:cover; /* Let the image retain its original size */
+ position:fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: -1; /* Ensure it stays behind content */
+ opacity:.5;
+ }
+ 
+ .fourth {
+ position:relative;
+ height: 100vh;
+ }
+ 
+ .fourth::before {
+ content: ''; /* Make sure content is set */
+ background-image: url('../pics/bp.jpeg');
+ background-repeat: repeat; /* Make the background image repeat */
+ background-size:cover; /* Let the image retain its original size */
+ position:fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: -1; /* Ensure it stays behind content */
+ opacity:.5;
+ }
+ 
+ .fifth {
+ position:relative;
+ height: 100vh;
+ }
+ 
+ .fifth::before {
+ content: ''; /* Make sure content is set */
+ background-image: url('../pics/cs.jpeg');
+ background-repeat: repeat; /* Make the background image repeat */
+ background-size:cover; /* Let the image retain its original size */
+ position:fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: -1; /* Ensure it stays behind content */
+ opacity:.5;
+ }
+ 
+ .sixth {
+ position:relative;
+ height: 100vh;
+ }
+ 
+ .sixth::before {
+content: ''; /* Make sure content is set */
+background-image: url('../pics/ps.jpeg');
+background-repeat: repeat; /* Make the background image repeat */
+background-size:cover; /* Let the image retain its original size */
+position:fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -1; /* Ensure it stays behind content */
+opacity:.5;
+ }
+}
