@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main Page - FerGon's Eatery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #F0F8FF;
+        }
+        /* Style the header */
+        .header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            background-image: url('Board.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1 {
+            color: #F0FFF0;
+            margin: 0;
+            font-size: 2em;
+        }
+        /* Style the top navigation bar */
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        ul.topnav li {
+            float: left;
+        }
+        ul.topnav li a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        ul.topnav li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+        ul.topnav li a.active {
+            background-color: #696969;
+        }
+        /* Responsive Navigation Bar */
+        @media only screen and (max-width: 600px) {
+            ul.topnav li {
+                float: none;
+            }
+        }
+        /* Style the main gallery section */
+        .section-gallery {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .section-gallery h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 0 10px;
+        }
+        .gallery {
+            border: 5px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            background-color: #222; /* Ensures the border color pops */
+        }
+        .gallery:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            border-color: #FFD700;
+        }
+        .gallery img {
+            width: 100%;
+            height:20rem; /* Makes the image responsive */
+            border-bottom: 3px solid #ccc;
+            object-fit: cover; /* Ensures proper cropping without distortion */
+        }
+        .gallery:hover img {
+            border-color: #FFD700;
+        }
+        .desc {
+            padding: 15px;
+            text-align: center;
+            background-color: #333;
+            color: #FFD700;
+            font-size: 1.2em;
+        }
+        /* Style the footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="pics/fergon.jpg" alt="FerGon's Logo">
+        <h1><i>FerGon's Eatery</i></h1>
+    </div>
+    <ul class="topnav">
+        <li><a href="jerqf.html">HOME</a></li>
+        <li><a class="active" href="#">MAIN</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact-page.html">CONTACT US</a></li>
+    </ul>
+    <section class="section-gallery">
+        <h2>Our Special Dishes</h2>
+        <div class="gallery-container">
+            <div class="gallery">
+                <a target="_blank" href="activity-p1.html">
+                    <img src="pics/bn.jpg" alt="Binangkal">
+                </a>
+                <div class="desc">Binangkal</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="activity-p2.html">
+                    <img src="pics/bl.jpeg" alt="Bulalo">
+                </a>
+                <div class="desc">Bulalo</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="activity-p3.html">
+                    <img src="pics/bp.jpeg" alt="Beef Papaitan">
+                </a>
+                <div class="desc">Beef Papaitan</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="activity-p4.html">
+                    <img src="pics/cs.jpeg" alt="Chopseuy">
+                </a>
+                <div class="desc">Chopseuy</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="activity-p5.html">
+                    <img src="pics/ps.jpeg" alt="Pork Sisig">
+                </a>
+                <div class="desc">Pork Sisig</div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <p>© 2025 Web Development - Arjay Nash L. Gonzales</p>
+        <p>Email:<a href="arjiwara8@gmail.com">fergoneatery@gmail.com</a> | Mobile: 09691735876</p>
+        <p>
+            <a href="https://www.facebook.com/jaayydoit">Facebook</a> |  
+            <a href="https://www.instagram.com/jaydoit__?igsh=MXNzd3FwcWl6N2gwaw==">Instagram</a>
+        </p>
+    </div>
+</body>
+</html>

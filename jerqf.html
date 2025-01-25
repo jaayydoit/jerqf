@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FerGon's Eatery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #F0F8FF;
+        }
+        /* Style the header */
+        .header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            background-image: url('Board.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+        .header img {
+            width: 100px;
+            vertical-align: middle;
+        }
+        .header h1 {
+            color: #F0FFF0;
+            display: inline-block;
+            margin-left: 20px;
+            font-size: 2.5em;
+        }
+        /* Style the top navigation bar */
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        ul.topnav li {
+            float: left;
+        }
+        ul.topnav li a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        ul.topnav li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+        ul.topnav li a.active {
+            background-color: #696969;
+        }
+        /* Responsive navigation bar */
+        @media screen and (max-width: 600px) {
+            ul.topnav li {
+                float: none;
+            }
+        }
+        /* Center visual content */
+        .center-content {
+            text-align: center;
+            padding: 20px;
+        }
+        .center-content img {
+            width: 70%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        .center-content h2 {
+            margin: 20px 0;
+            font-size: 2em;
+            color: #696969;
+        }
+        /* Create responsive columns */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .column {
+            padding: 10px;
+        }
+        .column.side {
+            flex: 1 1 25%;
+            background-color: black;
+            color: #FFD700;
+            background-image: url('.././pics/green.jpg');
+            text-align: center;
+        }
+        .column.middle {
+            flex: 1 1 50%;
+            background-color: black;
+            color: #F0FFF0;
+        }
+        /* Adjust column widths for small screens */
+        @media screen and (max-width: 600px) {
+            .column.side, .column.middle {
+                flex: 1 1 100%;
+            }
+        }
+        /* Style the footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="pics/fergon.jpg" alt="FerGon's Logo">
+        <h1><i>FerGon's Eatery</i></h1>
+    </div>
+    <ul class="topnav">
+        <li><a class="active" href="#">HOME</a></li>
+        <li><a href="main.html">MAIN</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact-page.html">CONTACT US</a></li>
+    </ul>
+    <div class="center-content">
+        <img src="pics/fergon.jpg" alt="Delicious Filipino Cuisine">
+        <h2>"Bringing the Heart of Filipino Cuisine to Every Bite!"</h2>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h1>Welcome to FerGon's!</h1>
+            <h2>Where Flavor Meets Tradition</h2>
+        </div>
+        <div class="column middle">            
+            <p><i>At FerGon's Eatery, we share the very best of Filipino culture through fresh, delicious dishes. From savory curries to tender, marinated adobo, our menu celebrates authentic Filipino cuisine while offering a unique spin on island classics. Whether you’re on the hunt for a culinary adventure or you’re looking for straight-from-the-heart home cooking, Chef Whilma will take care of you.</i></p>
+        </div>
+        <div class="column side">
+            <h1>BEST SELLERS:</h1>
+            <h3>Binangkal</h3>
+            <h3>Bulalo</h3>
+            <h3>Beef Papaitan</h3>
+            <h3>Chopseuy</h3>
+            <h3>Pork Sisig</h3>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 Web Development - Developed by Arjay Nash L. Gonzales</p>
+        <p>Email: <a href="arjiwara8@gmail.com">fergoneatery@gmail.com</a> | Mobile: 09691735876</p>
+        <p>
+            <a href="https://www.facebook.com/jaayydoit">Facebook</a> | 
+            <a href="https://www.instagram.com/jaydoit__?igsh=MXNzd3FwcWl6N2gwaw==">Instagram</a>
+        </p>
+    </div>
+</body>
+</html>
