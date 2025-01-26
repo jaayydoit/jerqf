@@ -1,1 +1,1 @@
-# am a piece of shit🖕
+no twice no life
